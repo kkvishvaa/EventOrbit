@@ -1,0 +1,140 @@
+
+.host-events-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--light-bg);
+}
+
+
+.event-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--dark-green);
+    font-size: 1.5rem;
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--dark-green);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+
+.submission-success {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 107, 56, 0.1);
+    border-radius: 15px;
+    border: 2px solid var(--dark-green);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.submission-success h2 {
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+.form-group input[type="file"] {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--dark-green);
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #141e30, #4d9358);
+    color: white;
+    border-top: 2px solid rgba(76, 205, 143, 0.5);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .host-events-page {
+        padding: 1.5rem;
+    }
+
+    .event-form {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        max-width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr; 
+    }
+
+    .submission-success {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .host-events-page {
+        padding: 1rem;
+    }
+
+    .event-form {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+
+    .submission-success {
+        padding: 1rem;
+    }
+}

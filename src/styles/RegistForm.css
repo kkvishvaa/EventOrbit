@@ -1,0 +1,49 @@
+.form-container {
+  background: rgba(0, 107, 56, 0.08);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border: 1px solid rgba(0, 107, 56, 0.15);
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1rem;
+}
+
+
+input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 107, 56, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: var(--dark-green);
+}
+
+
+@media (max-width: 600px) {
+  .form-container {
+      padding: 1.5rem;
+      max-width: 90%;
+  }
+
+  .form-grid {
+      grid-template-columns: 1fr;
+  }
+
+  input {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+  }
+}

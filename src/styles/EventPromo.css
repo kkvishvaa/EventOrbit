@@ -1,0 +1,103 @@
+.promo-container {
+    text-align: center;
+    background: rgba(0, 107, 56, 0.08);
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.6;
+}
+
+
+@media (max-width: 768px) {
+    .promo-container {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .promo-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .promo-container p {
+        font-size: 1.1rem;
+    }
+
+    .promo-container ul li {
+        font-size: 1rem;
+    }
+
+    .promo-container .highlight-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .promo-container {
+        padding: 1.2rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+    }
+
+    .promo-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .promo-container p {
+        font-size: 1rem;
+    }
+
+    .promo-container ul {
+        margin-top: 1rem;
+    }
+
+    .promo-container ul li {
+        font-size: 0.95rem;
+    }
+
+    .promo-container .highlight-text {
+        font-size: 1.1rem;
+    }
+}
+
+
+.promo-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(47, 211, 47);
+}
+
+
+.promo-container p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.promo-container ul {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.promo-container ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+
+.promo-container .highlight-text {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
